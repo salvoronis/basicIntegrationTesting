@@ -1,12 +1,9 @@
 package com.salvoronis.lab2
 
-class App {
-    val greeting: String
-        get() {
-            return "Hello World!"
-        }
-}
+import com.salvoronis.lab2.function.*
 
 fun main() {
-    println(App().greeting)
+    val func = MainFun()
+
+    println(func(-0.5))
 }

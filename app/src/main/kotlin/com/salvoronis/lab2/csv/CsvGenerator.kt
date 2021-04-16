@@ -35,13 +35,13 @@ class CSVGenerator(_filepath: String = "src/test/resources/results/") {
         }
     }
 
-    fun generate(func: ILog, step: Double, lowerBound: Double, upperBound: Double, precision: Double, base: Double) {
+    fun generate(func: ILog, step: Double, lowerBound: Double, upperBound: Double, base: Double) {
         createDirectories(Paths.get(filepath))
         val printStream = PrintStream(FileOutputStream(filepath + filename, true))
         printStream.use {
             var x = lowerBound
             while (x < upperBound) {
-                val result = func(x, base, precision)
+                val result = func(x, base)
                 val csvString = String.format(Locale.US, "%f, %f", x, result)
                 printStream.println(csvString)
                 x += step

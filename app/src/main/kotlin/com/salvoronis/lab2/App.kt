@@ -17,13 +17,13 @@ fun main() {
     val tan = Tan()
 
     generator.setFilePath("test-log2-0.1-0.1-1-result")
-    generator.generate(log, 0.1, 0.1, 1.0, 0.1, 2.0)
+    generator.generate(log, 0.1, 0.1, 1.0, 2.0)
 
     generator.setFilePath("test-log5-0.1-0.1-1-result")
-    generator.generate(log, 0.1, 0.1, 1.0, 0.1, 5.0)
+    generator.generate(log, 0.1, 0.1, 1.0, 5.0)
 
     generator.setFilePath("test-log10-0.1-0.1-1-result")
-    generator.generate(log, 0.1, 0.1, 1.0, 0.1, 10.0)
+    generator.generate(log, 0.1, 0.1, 1.0, 10.0)
 
     generator.setFilePath("test-ln-0.1-0.1-1-result")
     generator.generate(ln, 0.1, 0.1, 1.0, 0.1)
